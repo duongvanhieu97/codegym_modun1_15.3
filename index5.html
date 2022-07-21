@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arr1=["Polaris","Aldebaran","Deneb","Vega","Altair",'Dubhe','Regulus']
+    let arr2=['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo']
+    function search(star) {
+        let vitri = arr1.indexOf(star)
+        if (vitri !== -1) {
+            return document.write('Tìm thấy chòm sao ' + arr2[vitri])
+        }else {
+            return document.write('Không tìm thấy chòm sao')
+        }
+    }
+    let a = prompt('Nhập chòm sao')
+    search(a)
+</script>
+</body>
+</html>
